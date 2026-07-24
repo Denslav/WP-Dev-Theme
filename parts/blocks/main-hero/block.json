@@ -1,0 +1,32 @@
+{
+  "name": "thm/main-hero",
+  "title": "Main Hero",
+  "category": "main-blocks",
+  "icon": "screenoptions",
+  "apiVersion": 2,
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "block-render-template.php"
+  },
+  "style": "file:../../../dist/css/blocks/main-hero.css",
+  "supports": {
+    "align": [
+      "full"
+    ],
+    "anchor": true,
+    "html": false,
+    "spacing": {
+      "margin": true,
+      "padding": true
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  },
+  "textdomain": "main"
+}

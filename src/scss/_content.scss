@@ -1,0 +1,125 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.entry-content,
+.page__content {
+  font-size: 1rem;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 1.8em;
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  table,
+  pre,
+  figure,
+  .wp-block-group,
+  .wp-block-columns {
+    margin-bottom: 1.5rem;
+  }
+
+  blockquote {
+    margin-left: 0;
+    padding: 1rem 1.25rem;
+    border-left: 4px solid $secondary;
+    background-color: $accent;
+
+    cite {
+      display: block;
+      margin-top: 0.75rem;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  th,
+  td {
+    padding: 0.75rem;
+    border: 1px solid $border-color;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: $brand-light-gray;
+    font-weight: 700;
+  }
+
+  pre {
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: $white;
+    background-color: $primary;
+    overflow-x: auto;
+  }
+
+  code,
+  kbd,
+  samp {
+    font-family: Consolas, Monaco, monospace;
+  }
+
+  :not(pre) > code {
+    padding: 0.12em 0.35em;
+    border-radius: 0.25rem;
+    background-color: $brand-light-gray;
+  }
+
+  .wp-block-image img,
+  .post-thumbnail img {
+    display: block;
+  }
+
+  .alignwide {
+    width: min(90rem, calc(100vw - 2rem));
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .alignfull {
+    width: 100vw;
+    max-width: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include media-breakpoint-down(md) {
+    table {
+      display: block;
+      overflow-x: auto;
+    }
+  }
+}
+
+.page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 2rem;
+  font-weight: 700;
+}

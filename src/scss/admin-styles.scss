@@ -1,0 +1,39 @@
+@use "gutenberg-variables" as *;
+@use "variables" as *;
+@use "content";
+@use "blocks/main-hero";
+
+.editor-styles-wrapper {
+  color: $body-color;
+  background-color: $white;
+  font-family: $body-font;
+  font-size: 16px;
+  line-height: 1.6;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $primary;
+    font-family: $heading-font;
+    line-height: 1.2;
+  }
+
+  a {
+    color: $sg-link-color;
+  }
+
+  .wp-block {
+    max-width: $wp--preset--container--content-size;
+  }
+
+  .wp-block[data-align="wide"] {
+    max-width: $wp--preset--container--wide-size;
+  }
+
+  .wp-block[data-align="full"] {
+    max-width: none;
+  }
+}

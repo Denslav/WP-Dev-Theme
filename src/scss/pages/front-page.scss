@@ -1,0 +1,8 @@
+@use "../listing";
+
+.home .site-main,
+.front-page .site-main,
+.site-main {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}

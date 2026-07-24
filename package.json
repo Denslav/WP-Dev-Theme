@@ -1,0 +1,37 @@
+{
+  "name": "main-theme",
+  "version": "1.0.2",
+  "description": "WordPress starter theme build tools. Node.js 18+ is recommended.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "@fancyapps/ui": "^6.0.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
+    "browser-sync": "^2.27.9",
+    "glob": "^7.2.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "~5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss-pxtorem": "^6.1.0",
+    "sass": "~1.51.0",
+    "webpack": "^5.72.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build:js": "gulp build_js",
+    "build:css": "gulp build_styles",
+    "build": "gulp build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Denslav",
+  "license": "ISC"
+}

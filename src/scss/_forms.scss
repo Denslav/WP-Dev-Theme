@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]),
+textarea,
+select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid $border-color;
+  border-radius: 0.35rem;
+  color: $body-color;
+  background-color: $white;
+
+  &:focus {
+    border-color: $sg-link-color;
+    outline: 2px solid rgba($sg-link-color, 0.18);
+    outline-offset: 1px;
+  }
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}

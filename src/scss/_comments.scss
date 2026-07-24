@@ -1,0 +1,43 @@
+@use "variables" as *;
+
+.comments-area {
+  max-width: 52rem;
+  margin: 3rem auto 0;
+  padding-top: 2rem;
+  border-top: 1px solid $border-color;
+
+  .comment-list {
+    margin: 0 0 2rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .comment {
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    border: 1px solid $border-color;
+    border-radius: 0.5rem;
+  }
+
+  .children {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    list-style: none;
+  }
+
+  .comment-meta {
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .comment-author img {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+
+  .comment-form > p {
+    margin-bottom: 1rem;
+  }
+}

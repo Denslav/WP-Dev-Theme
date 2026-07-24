@@ -1,0 +1,110 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  color: $primary;
+  font-family: $heading-font;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.625rem, 3vw, 1.875rem);
+}
+
+h3 {
+  font-size: clamp(1.35rem, 2.4vw, 1.5rem);
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+small,
+.small {
+  font-size: 0.875rem;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a {
+  color: $sg-link-color;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  overflow-wrap: anywhere;
+
+  &:hover {
+    color: $brand-dark-blue;
+  }
+
+  @include transition(color 0.25s ease);
+}
+
+.btn,
+button.btn,
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 0.625rem 1.25rem;
+  border: 1px solid $black;
+  border-radius: 1rem;
+  color: $white;
+  background-color: $black;
+  font-family: $body-font;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $black;
+    color: $black;
+    background-color: $white;
+  }
+
+  @include transition((background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease));
+}

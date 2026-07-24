@@ -1,0 +1,16 @@
+@use "../listing";
+
+.search .site-main,
+.site-main.search {
+  padding: 2rem 0 4rem;
+}
+
+.search__empty {
+  max-width: 42rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}

@@ -1,0 +1,72 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.footer {
+  padding-top: 2rem;
+  color: $white;
+  background-color: var(--main-footer-background, $primary);
+  font-family: $heading-font;
+
+  &__logo {
+    width: 100%;
+    max-width: 3.125rem;
+
+    .custom-logo {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .site-title {
+      color: $white;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__copyright {
+    padding: 1.25rem 0;
+    border-top: 1px solid rgba($white, 0.16);
+  }
+
+  &__copyright-text {
+    text-align: center;
+    color: rgba($white, 0.84);
+    font-family: $body-font;
+    font-size: 0.875rem;
+  }
+
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+      display: inline-block;
+      padding: 0.25rem;
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}

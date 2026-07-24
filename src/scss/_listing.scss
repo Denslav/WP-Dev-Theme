@@ -1,0 +1,148 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.page-header,
+.archive__header,
+.search__header {
+  max-width: 52rem;
+  margin-bottom: 2rem;
+}
+
+.page-header__title,
+.search__title {
+  margin-bottom: 0.5rem;
+}
+
+.archive__description {
+  color: $brand-dark-gray;
+}
+
+.posts-list,
+.archive__posts,
+.search__results {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+
+  article {
+    height: 100%;
+    border: 1px solid $border-color;
+    border-radius: 0.75rem;
+    background-color: $white;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1.5rem rgba($primary, 0.06);
+  }
+
+  .post-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .post-thumbnail {
+    display: block;
+    aspect-ratio: 16 / 9;
+    background-color: $brand-light-gray;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.03);
+    }
+  }
+
+  .post-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 1.25rem;
+  }
+
+  .entry-title {
+    margin-bottom: 0.75rem;
+    font-size: 1.375rem;
+
+    a {
+      color: $primary;
+      text-decoration: none;
+
+      &:hover {
+        color: $sg-link-color;
+      }
+    }
+  }
+
+  .entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: $brand-gray;
+    font-size: 0.875rem;
+  }
+
+  .entry-summary {
+    flex-grow: 1;
+    color: $brand-dark-gray;
+  }
+
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+
+  @include media-breakpoint-down(lg) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.navigation.pagination {
+  margin-top: 2.5rem;
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .page-numbers {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid $border-color;
+    border-radius: 0.4rem;
+    color: $primary;
+    background-color: $white;
+    text-decoration: none;
+
+    &:hover,
+    &.current {
+      border-color: $primary;
+      color: $white;
+      background-color: $primary;
+    }
+  }
+}
+
+.no-results {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  background-color: $brand-light-gray;
+}

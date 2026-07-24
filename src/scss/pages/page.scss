@@ -1,0 +1,10 @@
+@use "../variables" as *;
+
+.page-template {
+  padding: 2rem 0 4rem;
+  .page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $border-color;
+  }
+}
