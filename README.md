@@ -876,3 +876,4 @@ Get-ChildItem -Recurse -Filter *.php | ForEach-Object { php -l $_.FullName }
 ## License
 
 The build tools in `package.json` use the ISC license. Before distributing the theme publicly, add a separate `LICENSE` file and explicitly define the licenses for the PHP, CSS, JavaScript, fonts, and third-party libraries.
+# Clean-WordPress-starter-theme
