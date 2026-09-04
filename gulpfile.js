@@ -34,9 +34,13 @@ function browserSync(done) {
             {
                 route: '/wp-content/themes/' + themeName + '/dist/js',
                 dir: 'dist/js'
+            },
+            {
+                route: '/wp-content/themes/' + themeName + '/dist/images',
+                dir: 'dist/images'
             }
         ],
-        files: ['dist/css/**/*.css', 'dist/js/**/*.js']
+        files: ['dist/css/**/*.css', 'dist/js/**/*.js', 'dist/images/**/*']
     });
     done();
 }
@@ -46,6 +50,7 @@ function startWatch(done) {
     gulp.watch('src/js/**/*.js', gulp.series(buildScripts, browserSyncInstance.reload));
     gulp.watch('theme.json', gulp.series(jsonToScss, buildStyles));
     gulp.watch('src/scss/**/*.scss', buildStyles);
+    gulp.watch('src/images/**/*', copyImages);
     gulp.watch('src/fonts/**/*', copyFonts);
     done();
 }
@@ -86,6 +91,14 @@ function buildStyles() {
 function copyFonts() {
     return gulp.src('src/fonts/**/*', { base: 'src/fonts', allowEmpty: true })
         .pipe(gulp.dest('dist/fonts'));
+}
+
+function copyImages() {
+    return gulp.src('src/images/**/*', {
+        base: 'src/images',
+        allowEmpty: true
+    })
+        .pipe(gulp.dest('dist/images'));
 }
 
 function buildScripts() {
@@ -152,13 +165,14 @@ function jsonToScss(done) {
     done();
 }
 
-let compile = gulp.parallel(buildScripts, buildStyles, copyFonts);
+let compile = gulp.parallel(buildScripts, buildStyles, copyFonts, copyImages);
 let build = gulp.series(cleanDist, jsonToScss, compile);
 
 exports.clean = cleanDist;
 exports.build_styles = buildStyles;
 exports.build_json = jsonToScss;
 exports.build_js = buildScripts;
+exports.copy_images = copyImages;
 exports.copy_fonts = copyFonts;
 exports.build = build;
 exports.default = gulp.series(build, gulp.parallel(browserSync, startWatch));

@@ -1,89 +1,140 @@
-/* Roboto */
+/* Cormorant Garamond */
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/roboto/Roboto-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/roboto/Roboto-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/roboto/Roboto-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* Cormorant Garamond Italic */
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-BoldItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/roboto/Roboto-Thin.woff2') format('woff2');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Lato */
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/Lato-Black.woff2') format('woff2');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-SemiBoldItalic.woff2') format('woff2');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/Lato-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-MediumItalic.woff2') format('woff2');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/Lato-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/Lato-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Cormorant Garamond';
+	src: url('../fonts/cormorant-garamond/CormorantGaramond-LightItalic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+
+/* Manrope */
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/manrope/Manrope-ExtraBold.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/Lato-Hairline.woff2') format('woff2');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+	font-family: 'Manrope';
+	src: url('../fonts/manrope/Manrope-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/manrope/Manrope-SemiBold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/manrope/Manrope-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/manrope/Manrope-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/manrope/Manrope-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/manrope/Manrope-ExtraLight.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
 }
